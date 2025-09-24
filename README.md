@@ -29,10 +29,10 @@ Cada um dos 128 cenários é definido por um código de 7 letras, onde `L` signi
 
 ### Passos para Execução
 
-1.  **Clone o repositório:**
+1. **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    cd seu-repositorio
+    git clone [https://github.com/Herysson/pmsp-instance-generator.git](https://github.com/Herysson/pmsp-instance-generator.git)
+    cd pmsp-instance-generator
     ```
 
 2.  **(Recomendado) Crie e ative um ambiente virtual:**
