@@ -1,4 +1,4 @@
-# Gerador de Cenários para Agendamento de Máquinas Paralelas (Parallel Machine Scheduling Problem Instance Generator PSMSIG)
+# Gerador de Cenários para Agendamento de Máquinas Paralelas (_Parallel Machine Scheduling Problem Instance Generator PSMSIG_)
 
 Este repositório contém um conjunto de scripts em Python para gerar instâncias de problemas de agendamento em máquinas paralelas com tempos de preparação dependentes da sequência. A metodologia de geração de dados é baseada no artigo científico:
 
