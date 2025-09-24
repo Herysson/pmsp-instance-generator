@@ -57,23 +57,23 @@ Cada um dos 128 cenários é definido por um código de 7 letras, onde `L` signi
 
     * **Para gerar o conjunto de dados completo (128 cenários, 10 réplicas cada):**
         ```bash
-        python main.py
+        python run_generator.py
         ```
         Isso criará uma pasta `instancias/` com 128 subpastas, contendo um total de 1280 arquivos `.json`.
 
     * **Para gerar apenas um tipo de cenário específico (ex: 10 réplicas de `LLLLLLL`):**
         ```bash
-        python main.py --cenario LLLLLLL
+        python run_generator.py --cenario LLLLLLL
         ```
 
     * **Para alterar o número de réplicas e a pasta de saída:**
         ```bash
-        python main.py --replicas 5 --pasta_saida meus_dados
+        python run_generator.py --replicas 5 --pasta_saida meus_dados
         ```
 
     * **Para ver todas as opções disponíveis:**
         ```bash
-        python main.py --help
+        python run_generator.py --help
         ```
 
 ## Formato de Saída
