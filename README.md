@@ -75,7 +75,23 @@ Cada um dos 128 cenários é definido por um código de 7 letras, onde `L` signi
         ```bash
         python run_generator.py --help
         ```
+     * **Para ver todas rodar o algoritimo de busca local:**
+        ```bash
+        python local_search2.py instancias\LLLLLLL\LLLLLLL_1.json
+        ```
+       No caso `instancias\LLLLLLL\LLLLLLL_1.json` é o local onde se encontra o cenário a ser executado
+       
+        ```bash
+        python local_search2.py LLLLLLL_1.json
+        ```
+       No caso `LLLLLLL_1.json` se o arquivo `.json` estiver na mesma pasta do `local_search2.py`
 
+    * **Para ver todas os cenrários**
+        ```bash
+        run_solver.bat
+        ```
+        Ou click duas vezes no arquivo `run_solver.bat`
+       
 ## Formato de Saída
 
 Cada instância gerada é um arquivo `.json` com a seguinte estrutura:
