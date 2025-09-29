@@ -117,3 +117,17 @@ Cada instância gerada é um arquivo `.json` com a seguinte estrutura:
     "ready_times": [ 0.0, 0.0, 0.0, ... ]
 }
 ```
+
+## Forma de calculo dos limitantes:
+
+### O Limite da Carga de Trabalho Mínima:
+
+Este limite é calculado somando-se, para cada tarefa, seu tempo de processamento `($p_i$)` com o seu menor tempo de setup possível para qualquer outra tarefa `($min_{j}(s_{ij})$)`.
+
+Essa soma total, que representa a "carga de trabalho" mínima para completar todas as tarefas, é então dividida pelo número de máquinas `($m$)`. A lógica é que, mesmo com uma divisão de trabalho perfeita, o makespan não pode ser menor que a carga total dividida entre as máquinas disponíveis.
+
+### O Limite do Caminho Crítico:
+
+Para cada tarefa, calcula-se uma duração mínima somando seu tempo de liberação `($r_i$)`, seu tempo de processamento `($p_i$)` e seu menor tempo de setup possível para outra tarefa `($min_{j}(s_{ij})$)`.
+
+O limite é então o valor máximo encontrado entre todas as tarefas. A ideia é que o makespan total não pode ser menor que o tempo mínimo exigido pela tarefa individual mais demorada e restrita.
