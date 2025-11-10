@@ -118,9 +118,11 @@ Cada instância gerada é um arquivo `.json` com a seguinte estrutura:
 }
 ```
 
-## Forma de calculo dos limitantes:
+## Forma de calculo dos limitantes - Limites Inferiores Dependentes dos Dados (DDLB- Data Dependent Lower Bounds):
 
-### O Limite da Carga de Trabalho Mínima:
+O DDLB representa um valor de makespan (tempo total para concluir todas as tarefas) que é teoricamente o menor possível para um determinado conjunto de dados do problema. Uma solução real nunca poderá ter um makespan menor que o DDLB. Portanto, quanto mais perto de 1.0 for a razão Makespan da Heurística / DDLB, melhor é a solução encontrada.
+
+### O Limite da Carga de Trabalho Mínima (DDLB - Data Dependent Lower Bounds):
 
 Este limite é calculado somando-se, para cada tarefa, seu tempo de processamento `($p_i$)` com o seu menor tempo de setup possível para qualquer outra tarefa `($min_{j}(s_{ij})$)`.
 
